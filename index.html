@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/main.css">
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<section class="container">
+
+  <div class="content">
+    <div class="bill">
+    <h1>
+      Bill
+    </h1>
+      <div class="bar">
+        <p class="error"></p>
+        <label for="">
+        <input class="tab" type="text" placeholder="0" id="base-calc">
+
+        </label>
+        
+    </div>
+    
+  </div>
+
+<div class="select">
+  <h1>
+    Select Tip %
+  </h1>
+  <div class="percent" >
+    <button class="percent-calc">5%</button>
+    <button class="percent-calc">10%</button>
+    <button class="percent-calc">15%</button>
+    <button class="percent-calc">25%</button>
+    <button class="percent-calc">50%</button>
+    <input class="custom-calc" name="Custom-calc" id="custom-calc" type="number" placeholder="Custom" />
+  </div>
+  
+</div>
+  <div class="numbers">
+    <div class="err">
+    <label for="">Number of People</label>
+       <p class="error">Can't be zero</p>
+    </div>
+      <label for="">
+      <input class="tab2" type="number" placeholder="0" id="people-calc">
+      </label>
+      
+  </div>
+  
+
+  </div>
+  
+  <div class="calc">
+
+    <div class="sec-content">
+      <div class="first-calc">
+        <div class="sub-first-calc">
+          <p class="tip-amount">
+          Tip Amount
+          </p>
+            <p>
+              / person
+            </p>
+          
+        </div>
+
+            <div class="nu">
+               <h1>$0.00</h1>
+            </div>
+      </div>
+
+      <div class="second-calc">
+        <div class="sub-second-calc">
+        <p class="total">
+          Total
+        </p>
+          <p>
+            / person  
+          </p>
+        </div>
+          <div class="nu2">
+               <h1>$0.00</h1>
+          </div>
+
+            
+        </div>
+
+      
+        </div>
+          <div class="btn">
+        <button class="reset-btn">
+            <h2>RESET
+            </h2>
+            </button>
+    </div>
+  </div>
+  
+</section>
+
+<script src="/src/app.js"></script>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
