@@ -1,10 +1,15 @@
+.splitter{
+    margin-left: 16rem;
+    font-family: 'space';
+}
+
 .container{
     display: flex;
     background-color: var(--white-color);
     border-radius: 12px;
     gap: 2rem;
     justify-content: center;
-    margin-left: 20rem;
+    margin-left: 14rem;
     padding: 0rem 0rem 0rem 2rem;
 }
 
@@ -71,8 +76,6 @@ label :placeholder-shown{
     padding-right: 1rem;
 }
 
-/* //PAROU AQUI, PADDING DO PLACEHOLDER */
-
 .percent{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -129,14 +132,19 @@ label :placeholder-shown{
     
 }
 
+input[type="number"]{
+    list-style: none;
+}
+
 .sec-content{
-       align-items: initial;
+    align-items: initial;
 }
 
 .first-calc{
+    min-width: 150px;
     display: flex;
     justify-content: space-between;
-    
+    position: relative;
 }
 
 .sub-first-calc{
@@ -197,12 +205,11 @@ label :placeholder-shown{
 }
 
 .nu,.nu2{
+    display: inline-block;
     color: var(--primary-color);
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 400;
-    transition: none;
     text-align: right;
-    max-width: 143px;
     margin: 0;
     padding: 0;
 }
@@ -230,4 +237,34 @@ h1{
 .reset-btn:hover{
     background-color:var(--main-color);
     transition: 250ms;
+}
+
+@media (max-width: 600px){
+    .container{
+        flex-direction: column;
+        margin-left: 2rem;
+        padding: 1rem;
+    }
+
+    .splitter{
+        margin-left: 2rem;
+    }
+
+    .calc{
+        margin: 2rem 0rem 0rem 0rem;
+        max-width: none;
+        width: 83%;
+    }
+
+    .btn{
+        margin: 2rem 0rem 0rem 0rem;
+    }
+
+    .reset-btn{
+        width: 100%;
+    }
+
+    .attribution{
+        margin-left: 0.7rem;
+    }
 }

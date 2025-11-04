@@ -39,3 +39,7 @@ input {
     --fs-input: 1.5rem;
     --fs-base: 1rem;
 }
+
+.attribution{
+    margin-left: 14rem;
+}
